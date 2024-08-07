@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JamSyck">
+    <meta name="keywords" content="<%= infogirl.name %>, doaxvv, api, api rest">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#<%= infogirl.codecolor %>" />
+    <meta property="og:title" content="<%= infogirl.name %> | DOAXVV API">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="<%= infogirl.miniatures.a %>">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="<%= infogirl.coin %>" type="image/x-icon">
+    <link rel="stylesheet" href="/character.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title><%= infogirl.name %> | DOAXVV API</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="top">
+        <img src="<%= infogirl.bromide.malfunction %>">
+        <h1><%= infogirl.name %></h1>
+        <i><%= infogirl.occupation %></i>
+    </div>
+    <main class="details">
+        <p><%= infogirl.story %></p>
+        <div class="x">
+            <h2><u>Characteristics</u></h2>
+            <p><b>Age: </b><%= infogirl.age %> years old</p>
+            <p><b>Birthday: </b><%= infogirl.birthday.month %> <%= infogirl.birthday.day %></p>
+            <p><b>Height: </b><%= infogirl.height %>cm</p>
+            <p><b>Measurements: </b> B<%= infogirl.measurements.bust %>/W<%= infogirl.measurements.waist %>/H<%= infogirl.measurements.hip %></p>
+            <p><b>Blood type: </b><%= infogirl.blood %></p>
+            <p><b>Hobbies: </b><%= infogirl.hobbies %></p>
+            <p><b>Favorite food: </b><%= infogirl.food %></p>
+            <p><b>Favorite color: </b><%= infogirl.color %></p>
+            <p><b>Nationality: </b><%= infogirl.nationality %></p>
+            <p><b>CV: </b><%= infogirl.cv %></p>
+            <p><b>Release: </b><%= infogirl.release.month %>-<%= infogirl.release.day %>-<%= infogirl.release.year %></p>
+            <img src="<%= infogirl.chibi %>">
+        </div>
+        <div class="ratio ratio-16x9">
+            <iframe src="<%= infogirl.trailer %>" frameborder="0"></iframe>
+        </div>
+        <div class="icons">
+            <img src="<%= infogirl.miniatures.a %>">
+            <img src="<%= infogirl.miniatures.b %>">
+            <img src="<%= infogirl.miniatures.c %>">
+            <img src="<%= infogirl.miniatures.d %>">
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

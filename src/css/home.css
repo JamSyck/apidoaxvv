@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Blenda Script';
+    src: url(/Blenda\ Script.otf);
+}
+
+@font-face {
+    font-family: 'Androgyne';
+    src: url(/Androgyne_TB.otf);
+}
+
+@font-face {
+    font-family: 'Juniors';
+    src: url(/Juniors.ttf);
+}
+
+@font-face {
+    font-family: 'Magnolia';
+    src: url(/Magnolia\ Script.otf);
+}
+
+body {
+    background-image: url(/beach.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    /* background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite; */
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.principal {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal img {
+    width: 100%;
+    filter: blur(5px);
+}
+
+.principal h1 {
+    position: absolute;
+    width: 60%;
+    font-size: 110px !important;
+    font-family: 'Blenda Script';
+    color: rgb(255, 15, 135);
+    -webkit-text-stroke: 4px black;
+    text-shadow: 5px 3px 6px black;
+    text-align: center;
+}
+
+.info {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1% 20%;
+    text-align: justify;
+}
+
+.info p {
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 80px !important;
+    margin: 2rem 0 !important;
+    font-family: 'Juniors';
+    text-shadow: 0 0 20px white;
+}
+
+.list {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.card-girl {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    transition: .2s ease-in-out;
+}
+
+.card-girl:hover {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.card-girl:hover .lc img {
+    transform: rotate(7deg) scale(1.1);
+}
+
+.lc img {
+    width: 200px;
+    transition: .2s ease-in-out;
+}
+
+.rc h2 {
+    font-family: 'Androgyne';
+    margin-bottom: 0;
+}
+
+.card-girl a {
+    width: 70px;
+    text-align: center;
+    color: #D80286;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #D80286;
+    border-radius: 7px;
+    padding: 2%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.2s;
+}
+
+.card-girl a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #D80286;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.card-girl a:hover,
+.card-girl a:focus,
+.card-girl a:active {
+    color: white;
+}
+
+.card-girl a:hover:before,
+.card-girl a:focus:before,
+.card-girl a:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.birthday::after {
+    content: 'Happy Birthday';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(10%, -50%);
+    transform: rotate(12deg);
+    background: linear-gradient(#ecc440, #fffa8a, #ddac17, #ffff95);
+    color: #D80286;
+    font-size: 20px;
+    font-family: 'Magnolia';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 2%;
+    width: 110px;
+    height: 70px;
+    text-align: center;
+    animation: glow .80s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #d25ed4, 0 0 16px #d25ed4, 0 0 20px #d25ed4, 0 0 24px #d25ed4, 0 0 28px #d25ed4;
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:425px) {
+    .principal {
+        height: 45vh;
+    }
+
+    .principal img {
+        height: 100%;
+        width: auto;
+    }
+
+    .principal h1 {
+        font-size: 55px !important;
+        width: 80%;
+        -webkit-text-stroke: 2px black;
+    }
+
+    .info {
+        width: 90%;
+        padding: 2%;
+        margin-top: 1rem;
+    }
+
+    .title {
+        font-size: 50px !important;
+    }
+
+    .list {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card-girl {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding-bottom: 2%;
+    }
+
+    .card-girl::after {
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+    }
+
+    .birthday::after {
+        width: 110px;
+        height: 70px;
+    }
+}
