@@ -41,7 +41,7 @@
 
 .details {
     width: 70%;
-    margin: 1rem auto;
+    margin: 1rem auto 0;
 }
 
 .details p {
@@ -110,8 +110,9 @@
     }
     .icons{
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .icons img{
         width: 170px;
