@@ -1,0 +1,39 @@
+footer {
+    width: 100%;
+    padding-top: 1%;
+    background-color: #212529;
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.f-top img {
+    margin-bottom: 1rem;
+}
+
+.social a {
+    text-decoration: none;
+    margin: 0 7px;
+}
+
+.social a:hover path {
+    fill: #ff0f87;
+}
+
+.f-bottom {
+    background: #191b1d;
+    margin-top: 1rem;
+    padding: 10px 0;
+}
+
+@media screen and (max-width:425px) {
+    footer {
+        padding-top: 2%;
+        margin-top: 2rem;
+    }
+
+    .f-top img {
+        height: 125px;
+        margin-bottom: 0.5rem;
+    }
+}

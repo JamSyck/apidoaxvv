@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JamSyck">
+    <meta name="keywords" content="<%= infogirl.name %>, doaxvv, api, api rest, rest api, restful, dead or alive">
+    <meta name="description" content="Learn more about <%= infogirl.name %>">
+    <meta name="theme-color" content="#<%= infogirl.codecolor %>">
+    <meta property="og:title" content="<%= infogirl.name %> | DOAXVV API">
+    <meta property="og:description" content="Learn more about <%= infogirl.name %>">
+    <meta property="og:image" content="<%= infogirl.miniatures.a %>">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="<%= infogirl.name %> | DOAXVV API">
+    <meta property="twitter:description" content="Learn more about <%= infogirl.name %>">
+    <meta property="twitter:image" content="<%= infogirl.miniatures.a %>">
+    <link rel="shortcut icon" href="<%= infogirl.coin %>" type="image/x-icon">
+    <link rel="apple-touch-icon" href="%= infogirl.coin %>">
+    <link rel="stylesheet" href="/css/girl.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title><%= infogirl.name %> | DOAXVV API</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <header class="top">
+        <img src="<%= infogirl.bromide.malfunction %>">
+        <h1><%= infogirl.name %></h1>
+        <i><%= infogirl.occupation %></i>
+    </header>
+    <main class="details">
+        <p><%= infogirl.story %></p>
+        <div class="items">
+            <h2><u>Characteristics</u></h2>
+            <p><b>Age: </b><%= infogirl.age %> years old</p>
+            <p><b>Birthday: </b><%= infogirl.birthday.month %> <%= infogirl.birthday.day %></p>
+            <p><b>Height: </b><%= infogirl.height %>cm</p>
+            <p><b>Measurements: </b> B<%= infogirl.measurements.bust %>/W<%= infogirl.measurements.waist %>/H<%=infogirl.measurements.hip %></p>
+            <p><b>Blood type: </b><%= infogirl.blood %></p>
+            <p><b>Hobbies: </b><%= infogirl.hobbies %></p>
+            <p><b>Favorite food: </b><%= infogirl.food %></p>
+            <p><b>Favorite color: </b><%= infogirl.color %></p>
+            <p><b>Nationality: </b><%= infogirl.nationality %></p>
+            <p><b>CV: </b><%= infogirl.cv %></p>
+            <p><b>Release: </b><%= infogirl.release.month %>-<%= infogirl.release.day %>-<%= infogirl.release.year %></p>
+            <img src="<%= infogirl.chibi %>">
+        </div>
+        <div class="ratio ratio-16x9">
+            <iframe src="<%= infogirl.trailer %>" loading="lazy" name="<%= infogirl.name %>'s trailer" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="icons">
+            <img src="<%= infogirl.miniatures.a %>">
+            <img src="<%= infogirl.miniatures.b %>">
+            <img src="<%= infogirl.miniatures.c %>">
+            <img src="<%= infogirl.miniatures.d %>">
+        </div>
+        <hr>
+        <h2 style="text-align: center;">MUSIC <i class="bx bxs-music"></i></h2>
+        <div class="theme-song">
+            <div class="ts-left">
+                <img src="<%= infogirl.portrait %>">
+            </div>
+            <div class="ts-right">
+                <h3><%= infogirl.theme.name %></h3>
+                <p><%= infogirl.name %>'s theme</p>
+                <div class="audio-player">
+                    <audio id="audio" src="<%= infogirl.theme.song %>" preload="auto" type="audio/mpeg"></audio>
+                    <div class="timeline">
+                        <span id="current-time">0:00</span>
+                        <input type="range" id="seek-bar" value="0" min="0">
+                        <span id="duration-time">0:00</span>
+                    </div>
+                    <div class="controls">
+                        <button type="button" id="stop" class="bi bi-stop-fill" title="Stop"></button>
+                        <button type="button" id="rewind" class="bi bi-rewind-fill" title="-10sec"></button>
+                        <button type="button" id="play-pause" class="bi bi-play-circle" title="Play" disabled></button>
+                        <button type="button" id="forward" class="bi bi-fast-forward-fill" title="+10sec"></button>
+                        <button type="button" id="repeat" class="bi bi-repeat" title="Repeat"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+    <script src="/js/player.js"></script>
+</body>
+</html>

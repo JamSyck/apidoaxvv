@@ -1,0 +1,178 @@
+h1 {
+    width: 80%;
+    margin: 1rem auto !important;
+    text-align: center;
+    font-size: 50px !important;
+}
+
+.link-access {
+    position: relative;
+    background-color: aquamarine;
+    padding: 1%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.link-access b {
+    margin-right: 5px;
+}
+
+.link-access i {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+h5 {
+    width: 80%;
+    margin: 1rem auto !important;
+}
+
+.info,
+.tablex {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.view-code {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding: 1%;
+    color: white;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.view-code::-webkit-scrollbar {
+    height: 7px;
+    transition: .1s ease-in;
+}
+
+.view-code::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 15, 135);
+    border-radius: 10px;
+    display: none;
+}
+
+.view-code:hover::-webkit-scrollbar-thumb {
+    display: block;
+}
+
+.item1 {
+    color: #FFD710;
+}
+
+.item2 {
+    color: #DA70CB;
+    margin-left: 2rem;
+}
+
+.item3 {
+    color: #8CDCFE;
+    margin-left: 4rem;
+}
+
+.item4 {
+    color: #B5CEA8;
+}
+
+.item5 {
+    color: #CE9178;
+}
+
+.item6 {
+    color: #1C94FF;
+}
+
+.item7 {
+    color: #8CDCFE;
+    margin-left: 6rem;
+}
+
+.item8 {
+    color: #B5CEA8;
+}
+
+.item9 {
+    color: #1C94FF;
+    margin-left: 4rem;
+}
+
+.item10,
+.item11 {
+    color: #CE9178;
+}
+
+.item10:hover,
+.item11:hover {
+    color: #529955;
+}
+
+.item10 a,
+.item11 a {
+    color: #CE9178;
+}
+
+.item10 a:hover,
+.item11 a:hover {
+    color: #529955;
+}
+
+.p {
+    width: 80%;
+    margin: 1em auto;
+}
+
+.icons-girls {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons-girls a {
+    text-decoration: none;
+    transition: .1s ease-in;
+}
+
+.icons-girls a:hover {
+    filter: drop-shadow(0 0 3px rgb(255, 15, 135));
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:425px) {
+    h1 {
+        font-size: 35px !important;
+        width: 90%;
+    }
+
+    h5 {
+        width: 90%;
+    }
+
+    .p,
+    .info,
+    .tablex,
+    .icons-girls {
+        width: 90%;
+    }
+
+    .link-access {
+        padding: 2%;
+    }
+
+    .link-access i {
+        display: none;
+    }
+
+    .view-code {
+        width: 90%;
+        padding: 2%;
+    }
+}

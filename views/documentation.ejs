@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JamSyck">
+    <meta name="keywords" content="documentation, doaxvv, api, api rest, rest api, restful, dead or alive">
+    <meta name="description" content="Learn about the structure and all the material that this API provides about DOAXVV girls">
+    <meta property="og:title" content="Documentation | DOAXVV API">
+    <meta property="og:description" content="Learn about the structure and all the material that this API provides about DOAXVV girls">
+    <meta property="og:image" content="https://images2.imgbox.com/01/91/Zt9BDYCQ_o.jpg">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Documentation | DOAXVV API">
+    <meta property="twitter:description" content="Learn about the structure and all the material that this API provides about DOAXVV girls">
+    <meta property="twitter:image" content="https://images2.imgbox.com/01/91/Zt9BDYCQ_o.jpg">
+    <link rel="shortcut icon" href="/img/icon.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/icon.jpg">
+    <link rel="stylesheet" href="/css/documentation.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Documentation | DOAXVV API</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <h1>DOCUMENTATION</h1>
+    <div class="info">
+        <p>This REST API will help you get familiar with the available resources it offers and how the data information is detailed. This API is very simple, it contains an array with 31 objects (31 girls), with all the possible information about each one, including multimedia material such as images, videos and audios.</p>
+        <p>The request to this link is by GET method going through https, which will return the result in JSON format.</p>
+        <p class="link-access">
+            <b>Base URL:</b>
+            <a id="alink" href="/api/characters" target="_blank"></a>
+            <i id="icon" class="bx bx-copy" title="Copy to clipboard"></i>
+        </p>
+    </div>
+    <h5>Character schema</h5>
+    <div class="table-responsive tablex">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Key</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">ID</th>
+                    <td>int</td>
+                    <td>The id of the character</td>
+                </tr>
+                <tr>
+                    <th scope="row">NAME</th>
+                    <td>string</td>
+                    <td>The name of the character</td>
+                </tr>
+                <tr>
+                    <th scope="row">AGE</th>
+                    <td>int</td>
+                    <td>The age of the character</td>
+                </tr>
+                <tr>
+                    <th scope="row">BIRTHDAY</th>
+                    <td>string/int</td>
+                    <td>The character's birthday</td>
+                </tr>
+                <tr>
+                    <th scope="row">HEIGHT</th>
+                    <td>int</td>
+                    <td>The height of the character en centimeters</td>
+                </tr>
+                <tr>
+                    <th scope="row">MEASUREMENTS</th>
+                    <td>int</td>
+                    <td>The character's body measurements</td>
+                </tr>
+                <tr>
+                    <th scope="row">BLOOD</th>
+                    <td>string</td>
+                    <td>The blood type of the character</td>
+                </tr>
+                <tr>
+                    <th scope="row">HOBBIES</th>
+                    <td>string</td>
+                    <td>The favorite actions or things that the character does</td>
+                </tr>
+                <tr>
+                    <th scope="row">OCCUPATION</th>
+                    <td>string</td>
+                    <td>The role or character profile</td>
+                </tr>
+                <tr>
+                    <th scope="row">FOOD</th>
+                    <td>string</td>
+                    <td>The character's favorite food</td>
+                </tr>
+                <tr>
+                    <th scope="row">COLOR</th>
+                    <td>string</td>
+                    <td>The character color's favorite color</td>
+                </tr>
+                <tr>
+                    <th scope="row">CODECOLOR</th>
+                    <td>string</td>
+                    <td>It's the character's favorite color code</td>
+                </tr>
+                <tr>
+                    <th scope="row">NACIONALITY</th>
+                    <td>string</td>
+                    <td>Country of origin of the character</td>
+                </tr>
+                <tr>
+                    <th scope="row">CV</th>
+                    <td>string</td>
+                    <td>Name of the voice actress</td>
+                </tr>
+                <tr>
+                    <th scope="row">ICON</th>
+                    <td>string (url)</td>
+                    <td>A character icon</td>
+                </tr>
+                <tr>
+                    <th scope="row">COIN</th>
+                    <td>string (url)</td>
+                    <td>Image of a coin with the character's face</td>
+                </tr>
+                <tr>
+                    <th scope="row">CHIBI</th>
+                    <td>string (url)</td>
+                    <td>Image of a chibi version of the character</td>
+                </tr>
+                <tr>
+                    <th scope="row">PORTRAIT</th>
+                    <td>string (url)</td>
+                    <td>A photograph of the character focused only on the face</td>
+                </tr>
+                <tr>
+                    <th scope="row">PHOTO</th>
+                    <td>string (url)</td>
+                    <td>A photograph of the character</td>
+                </tr>
+                <tr>
+                    <th scope="row">BROMIDE</th>
+                    <td>string (url)</td>
+                    <td>Wallpapers of the character with the main suit in its 2 states, normal and malfunction (1920x1080)</td>
+                </tr>
+                <tr>
+                    <th scope="row">MINIATURES</th>
+                    <td>string (url)</td>
+                    <td>4 different chibis images of the character</td>
+                </tr>
+                <tr>
+                    <th scope="row">STORY</th>
+                    <td>string</td>
+                    <td>The character's story within the game's plot</td>
+                </tr>
+                <tr>
+                    <th scope="row">TRAILER</th>
+                    <td>string (url)</td>
+                    <td>Iframe of a YouTube video of the character trailer</td>
+                </tr>
+                <tr>
+                    <th scope="row">RELEASE</th>
+                    <td>int/string</td>
+                    <td>Date the character was added to the game</td>
+                </tr>
+                <tr>
+                    <th scope="row">THEME</th>
+                    <td>string/url</td>
+                    <td>It is the song that identifies or represents the character, including the title of the song.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <code class="view-code">
+        <span class="item1">[</span><br>
+        <span class="item2">{</span><br>
+        <span class="item3">"id"</span>: <span class="item4">1</span>,<br>
+        <span class="item3">"name"</span>: <span class="item5">"Misaki"</span>,<br>
+        <span class="item3">"age"</span>: <span class="item4">18</span>,<br>
+        <span class="item3">"birthday"</span>: <span class="item6">{</span><br>
+        <span class="item7">"month"</span>: <span class="item5">"July"</span>,<br>
+        <span class="item7">"day"</span>: <span class="item8">7</span><br>
+        <span class="item9">}</span>,<br>
+        <span class="item3">"height"</span>: <span class="item4">156</span>,<br>
+        <span class="item3">"measurements"</span>: <span class="item6">{</span><br>
+        <span class="item7">"bust"</span>: <span class="item4">85</span>,<br>
+        <span class="item7">"waist"</span>: <span class="item4">54</span>,<br>
+        <span class="item7">"hip"</span>: <span class="item4">89</span><br>
+        <span class="item9">}</span>,<br>
+        <span class="item3">"blood"</span>: <span class="item5">"A"</span>,<br>
+        <span class="item3">"hobbies"</span>: <span class="item5">"Reading manga, stargazing, diving"</span>,<br>
+        <span class="item3">"occupation"</span>: <span class="item5">"Student"</span>,<br>
+        <span class="item3">"food"</span>: <span class="item5">"Mango Vanilla Crepe, Bubble Tea Latte"</span>,<br>
+        <span class="item3">"color"</span>: <span class="item5">"Orange"</span>,<br>
+        <span class="item3">"codecolor"</span>: <span class="item5">"ff8800"</span>,<br>
+        <span class="item3">"nationality"</span>: <span class="item5">"Japanese"</span>,<br>
+        <span class="item3">"cv"</span>: <span class="item5">"Minami Tsuda"</span>,<br>
+        <span class="item3">"icon"</span>: <span class="item10">"<a href="https://images2.imgbox.com/89/56/Wf8jjcCl_o.png" target="_blank">https://images2.imgbox.com/89/56/Wf8jjcCl_o.png</a>"</span>,<br>
+        <span class="item3">"coin"</span>: <span class="item10">"<a href="https://images2.imgbox.com/98/c9/p2e9vHOD_o.png" target="_blank">https://images2.imgbox.com/98/c9/p2e9vHOD_o.png</a>"</span>,<br>
+        <span class="item3">"chibi"</span>: <span class="item10">"<a href="https://images2.imgbox.com/a6/81/1kaYqlsn_o.png" target="_blank">https://images2.imgbox.com/a6/81/1kaYqlsn_o.png</a>"</span>,<br>
+        <span class="item3">"portrait"</span>: <span class="item10">"<a href="https://images2.imgbox.com/40/f8/s6yZHZap_o.png" target="_blank">https://images2.imgbox.com/40/f8/s6yZHZap_o.png</a>"</span>,<br>
+        <span class="item3">"photo"</span>: <span class="item10">"<a href="https://images2.imgbox.com/61/43/Gb9gZrtj_o.png" target="_blank">https://images2.imgbox.com/61/43/Gb9gZrtj_o.png</a>"</span>,<br>
+        <span class="item3">"bromide"</span>: <span class="item6">{</span><br>
+        <span class="item7">"normal"</span>: <span class="item11">"<a href="https://images2.imgbox.com/1d/86/ira1ypIF_o.jpg" target="_blank">https://images2.imgbox.com/1d/86/ira1ypIF_o.jpg</a>"</span>,<br>
+        <span class="item7">"malfunction"</span>: <span class="item11">"<a href="https://images2.imgbox.com/77/fd/UVHbPmni_o.jpg" target="_blank">https://images2.imgbox.com/77/fd/UVHbPmni_o.jpg</a>"</span><br>
+        <span class="item9">}</span>,<br>
+        <span class="item3">"miniatures"</span>: <span class="item6">{</span><br>
+        <span class="item7">"a"</span>: <span class="item11">"<a href="https://images2.imgbox.com/30/fe/w5xNlSrr_o.png" target="_blank">https://images2.imgbox.com/30/fe/w5xNlSrr_o.png</a>"</span>,<br>
+        <span class="item7">"b"</span>: <span class="item11">"<a href="https://images2.imgbox.com/e0/c8/fQWIx2hI_o.png" target="_blank">https://images2.imgbox.com/e0/c8/fQWIx2hI_o.png</a>"</span>,<br>
+        <span class="item7">"c"</span>: <span class="item11">"<a href="https://images2.imgbox.com/e0/ab/gaVxl7rr_o.png" target="_blank">https://images2.imgbox.com/e0/ab/gaVxl7rr_o.png</a>"</span>,<br>
+        <span class="item7">"d"</span>: <span class="item11">"<a href="https://images2.imgbox.com/79/e9/JffNHR5W_o.png" target="_blank">https://images2.imgbox.com/79/e9/JffNHR5W_o.png</a>"</span><br>
+        <span class="item9">}</span>,<br>
+        <span class="item3">"story"</span>: <span class="item5">"Part-time staff who always support the owner as exclusive supporters. A modern-day girl who casually approaches the owner as if she were a friend. She also has a shy side that hates exposing her skin..."</span>,<br>
+        <span class="item3">"trailer"</span>: <span class="item10">"<a href="https://www.youtube.com/embed/pT-7T9pgaGE?si=oGZO_MxrgZ0r6qBI" target="_blank">https://www.youtube.com/embed/pT-7T9pgaGE?si=oGZO_MxrgZ0r6qBI</a>"</span>,<br>
+        <span class="item3">"release"</span>: <span class="item6">{</span><br>
+        <span class="item7">"year"</span>: <span class="item8">2017</span>,<br>
+        <span class="item7">"month"</span>: <span class="item5">"November"</span>,<br>
+        <span class="item7">"day"</span>: <span class="item8">15</span><br>
+        <span class="item9">}</span>,<br>
+        <span class="item3">"theme"</span>: <span class="item6">{</span><br>
+        <span class="item7">"name"</span>: <span class="item5">"Beautiful Sunset"</span>,<br>
+        <span class="item7">"song"</span>: <span class="item11">"<a href="https://vgmsite.com/soundtracks/dead-or-alive-xtreme-venus-vacation-2024/okddjepegf/01.%20Beautiful%20Sunset%20%28Misaki%27s%20theme%29.mp3" target="_blank">https://vgmsite.com/soundtracks/dead-or-alive-xtreme-venus-vacation-2024/okddjepegf/01.%20Beautiful%20Sunset%20%28Misaki%27s%20theme%29.mp3</a>"</span><br>
+        <span class="item9">}</span><br>
+        <span class="item2">}</span><br>
+        <span class="item1">]</span>
+    </code>
+    <p class="p">You can also access information for a single character with the id as a parameter</p>
+    <div class="icons-girls">
+        <% listgirls.forEach(girl=>{ %>
+            <a href="/api/character/<%= girl.id %>" target="_blank" title="<%= girl.name %>">
+                <img src="<%= girl.icon %>" alt="<%= girl.name %>" height="50">
+            </a>
+        <% }) %>
+    </div>
+    <%- include('partials/footer') %>
+    <script src="/js/clipboard.js"></script>
+</body>
+</html>

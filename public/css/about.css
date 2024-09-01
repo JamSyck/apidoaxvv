@@ -1,0 +1,50 @@
+h1 {
+    width: 80%;
+    margin: 1rem auto !important;
+    text-align: center;
+    font-size: 50px !important;
+}
+
+main {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+.cover {
+    width: 60%;
+    margin: 1rem auto 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cover img {
+    border-radius: 7px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.cover a i {
+    font-size: 20px;
+}
+
+#access1 {
+    position: absolute;
+    bottom: 10px;
+    margin-right: 5em;
+}
+
+#access2 {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 5em;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:425px) {
+
+    h1,
+    main {
+        width: 90%;
+    }
+}
