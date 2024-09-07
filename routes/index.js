@@ -1,6 +1,6 @@
 import { Router } from 'express'
 const router = Router()
-const data = 'https://gist.githubusercontent.com/JamSyck/d78d67db1dc7d87e2711baa946a3b5ca/raw/5200ff56a78a2855b6f8d0eca66e26996269599a/characters.json'
+const data = 'https://gist.githubusercontent.com/JamSyck/d78d67db1dc7d87e2711baa946a3b5ca/raw/041155b979fa1017fcb45dbb4982cf236ce8ff19/characters.json'
 
 const thisMonth = {
     'January': 1,

@@ -24,7 +24,7 @@ body {
 
 .top h1 {
     position: absolute;
-    bottom: 6rem;
+    bottom: 4rem;
     font-size: 80px;
     font-family: 'Androgyne';
     color: black;
@@ -33,19 +33,21 @@ body {
     text-transform: uppercase;
 }
 
-.top i {
-    position: absolute;
-    bottom: 4rem;
-    font-size: 30px;
-    font-weight: 500;
-    color: white;
-    -webkit-text-stroke: 1.5px black;
-    text-shadow: 0 1px 12px black;
-}
-
 .details {
     width: 70%;
     margin: 1rem auto 0;
+}
+
+.rol {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 0 7px;
+    font-weight: 700;
+}
+
+.details h3 {
+    font-size: 22px;
 }
 
 .details p {
@@ -301,12 +303,6 @@ body {
     .top h1 {
         font-size: 40px;
         -webkit-text-stroke: 1px white;
-        bottom: 2rem;
-    }
-
-    .top i {
-        font-size: 20px;
-        -webkit-text-stroke: 0.5px black;
         bottom: 1rem;
     }
 
@@ -323,7 +319,7 @@ body {
     }
 
     .items img {
-        height: 160px;
+        height: 150px;
         z-index: -1;
     }
 

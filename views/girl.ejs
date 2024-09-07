@@ -30,27 +30,27 @@
     <header class="top">
         <img src="<%= infogirl.bromide.malfunction %>">
         <h1><%= infogirl.name %></h1>
-        <i><%= infogirl.occupation %></i>
     </header>
     <main class="details">
+        <h2 class="rol"><img src="<%= infogirl.icon %>" height="35"><i><%= infogirl.occupation %></i></h2>
         <p><%= infogirl.story %></p>
         <div class="items">
-            <h2><u>Characteristics</u></h2>
+            <h3><u>Characteristics</u></h3>
             <p><b>Age: </b><%= infogirl.age %> years old</p>
             <p><b>Birthday: </b><%= infogirl.birthday.month %> <%= infogirl.birthday.day %></p>
             <p><b>Height: </b><%= infogirl.height %>cm</p>
             <p><b>Measurements: </b> B<%= infogirl.measurements.bust %>/W<%= infogirl.measurements.waist %>/H<%=infogirl.measurements.hip %></p>
-            <p><b>Blood type: </b><%= infogirl.blood %></p>
+            <p><b>Blood Type: </b><%= infogirl.blood %></p>
             <p><b>Hobbies: </b><%= infogirl.hobbies %></p>
-            <p><b>Favorite food: </b><%= infogirl.food %></p>
-            <p><b>Favorite color: </b><%= infogirl.color %></p>
+            <p><b>Favorite Food: </b><%= infogirl.food %></p>
+            <p><b>Favorite Color: </b><%= infogirl.color %></p>
             <p><b>Nationality: </b><%= infogirl.nationality %></p>
             <p><b>CV: </b><%= infogirl.cv %></p>
             <p><b>Release: </b><%= infogirl.release.month %>-<%= infogirl.release.day %>-<%= infogirl.release.year %></p>
             <img src="<%= infogirl.chibi %>">
         </div>
         <div class="ratio ratio-16x9">
-            <iframe src="<%= infogirl.trailer %>" loading="lazy" name="<%= infogirl.name %>'s trailer" frameborder="0" allowfullscreen></iframe>
+            <iframe src="<%= infogirl.trailer %>" title="<%= infogirl.name %>'s trailer" loading="lazy" allowfullscreen></iframe>
         </div>
         <div class="icons">
             <img src="<%= infogirl.miniatures.a %>">

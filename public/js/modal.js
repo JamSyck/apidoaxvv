@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const girls = document.querySelectorAll('.girl');
+    const address = window.location.origin
     girls.forEach(girl => {
         girl.addEventListener('click', function (event) {
             event.preventDefault();
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 imageUrl: photo,
                 imageWidth: 400,
                 imageHeight: 225,
-                html: `<a class="btn btn-warning" href="https://www.apidoaxvv.xyz/character/${id}" target="_blank"><i class="bi bi-person-square"></i> Profile</a> <a class="btn btn-secondary" href="https://www.apidoaxvv.xyz/api/character/${id}" target="_blank"><i class="bi bi-filetype-json"></i> JSON</a>`,
+                html: `<a class="btn btn-warning" href="${address}/character/${id}" target="_blank"><i class="bi bi-person-square"></i> Profile</a> <a class="btn btn-secondary" href="${address}/api/character/${id}" target="_blank"><i class="bi bi-filetype-json"></i> JSON</a>`,
                 showConfirmButton: false,
                 showCloseButton: true
             });
