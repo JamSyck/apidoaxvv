@@ -32,10 +32,10 @@
         <h1><%= infogirl.name %></h1>
     </header>
     <main class="details">
-        <h2 class="rol"><img src="<%= infogirl.icon %>" height="35"><i><%= infogirl.occupation %></i></h2>
+        <h2 class="rol"><img src="<%= infogirl.icon %>" height="35"><%= infogirl.occupation %></h2>
         <p><%= infogirl.story %></p>
         <div class="items">
-            <h3><u>Characteristics</u></h3>
+            <h4><u>Characteristics</u></h4>
             <p><b>Age: </b><%= infogirl.age %> years old</p>
             <p><b>Birthday: </b><%= infogirl.birthday.month %> <%= infogirl.birthday.day %></p>
             <p><b>Height: </b><%= infogirl.height %>cm</p>
@@ -62,7 +62,7 @@
         <h2 style="text-align: center;">MUSIC <i class="bx bxs-music"></i></h2>
         <div class="theme-song">
             <div class="ts-left">
-                <img src="<%= infogirl.portrait %>">
+                <img src="<%= infogirl.portrait %>" width="300">
             </div>
             <div class="ts-right">
                 <h3><%= infogirl.theme.name %></h3>

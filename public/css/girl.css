@@ -39,15 +39,12 @@ body {
 }
 
 .rol {
-    font-size: 22px;
+    font-size: 22px !important;
     display: flex;
     align-items: center;
     gap: 0 7px;
     font-weight: 700;
-}
-
-.details h3 {
-    font-size: 22px;
+    font-style: italic;
 }
 
 .details p {
@@ -76,64 +73,6 @@ body {
     width: 300px;
 }
 
-/* .gravures {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1%;
-}
-
-.clip {
-    width: 320px;
-    height: 180px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1em 0;
-    transition: all .1s ease-in-out;
-}
-
-.clip:hover {
-    cursor: pointer;
-    box-shadow: 0 0 7px #ff0f87;
-}
-
-.clip i {
-    position: absolute;
-    font-size: 55px;
-    color: white;
-    opacity: 0;
-}
-
-.clip:hover i {
-    opacity: 100;
-}
-
-.clip p {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    background-color: #ff0f87;
-    color: white;
-    padding: 2%;
-    font-size: 12px;
-    border-radius: 0 10px 0;
-    text-align: center;
-}
-
-.clip img {
-    width: 100%;
-}
-
-.modal-dialog {
-    max-width: 70% !important;
-} */
-
 .theme-song {
     display: flex;
     padding: 1%;
@@ -157,10 +96,6 @@ body {
     100% {
         background-position: 0 50%;
     }
-}
-
-.ts-left img {
-    width: 300px;
 }
 
 .ts-right {
@@ -189,7 +124,6 @@ body {
 .timeline {
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .controls {
@@ -324,10 +258,7 @@ body {
     }
 
     .icons {
-        width: 100%;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .icons img {

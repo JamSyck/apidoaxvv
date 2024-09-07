@@ -157,23 +157,6 @@ body {
 
 /* RESPONSIVE */
 @media screen and (max-width:425px) {
-    .principal {
-        height: 45vh;
-    }
-
-    .principal h1 {
-        font-size: 55px !important;
-        width: 86%;
-        -webkit-text-stroke: 2px black;
-        letter-spacing: 0;
-    }
-
-    .info {
-        width: 90%;
-        padding: 2%;
-        margin-top: 1rem;
-    }
-
     .title {
         font-size: 50px !important;
     }
@@ -186,15 +169,8 @@ body {
 
     .card-girl {
         flex-direction: column;
-        text-align: center;
         gap: 0;
-        padding-bottom: 2%;
-    }
-
-    .card-girl::after {
-        bottom: 0;
-        width: 100%;
-        height: 200px;
+        padding-bottom: 3%;
     }
 
     .cg-left img {
@@ -211,11 +187,8 @@ body {
         font-size: 20px;
     }
 
+    .cg-right p,
     .cg-right i {
-        font-size: 14px;
-    }
-
-    .cg-right p {
         display: none;
     }
 
