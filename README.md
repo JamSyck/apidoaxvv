@@ -4,8 +4,6 @@
 
 This is a REST API based on the Japanese game developed by TEAM NINJA, Dead Or Alive Xtreme Venus Vacation (DOAXVV). This API only provides information about the girls, from the basics to the most characteristic of each one.
 
-[![Website](https://img.shields.io/badge/visit%20the%20website-FF0066?style=flat&logo=google-chrome&logoColor=white)](https://apidoaxvv.xyz)
-
 **Items included in the data**
 
 - Basic information 📄
