@@ -24,8 +24,4 @@ This is a REST API based on the Japanese game developed by TEAM NINJA, Dead Or A
 
 <hr>
 
-I would really appreciate if you could help me share the website with others and invite them to build applications using this API so you can do the same👍.
-
-<img src="https://64.media.tumblr.com/471c752ac4fea43713931065d70fabc9/256910082c2e4772-de/s540x810/9a40f75b109fcbd6b5ab0dfb339fc2444d066ed1.gif">
-
 ⭐️ From [JamSyck](https://github.com/JamSyck)
